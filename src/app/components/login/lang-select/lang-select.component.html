@@ -1,0 +1,9 @@
+<mat-select #Lang [(ngModel)]="selected" class="dropdown-white" (change)="changeListener()">
+  <mat-option value="" selected disabled>English (USA)
+    <i class="material-icons arrow-up">arrow_drop_up</i>
+  </mat-option>
+  <mat-option [value]="1">English (USA)</mat-option>
+  <mat-option [value]="2">Français (Canada)</mat-option>
+  <mat-option [value]="3">Deutsch (Germany)</mat-option>
+  <mat-option [value]="4">Español (Mexico)</mat-option>
+</mat-select>

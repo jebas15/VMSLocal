@@ -1,0 +1,23 @@
+﻿{
+  "Username": "Nombre de usuario",
+  "UsernameRequired": "Por favor, ingrese un nombre de usuario",
+  "Password": "Contraseña",
+  "PasswordRequired": "porfavor ingrese una contraseña",
+  "Oldpassword": "Contraseña anterior",
+  "Newpassword": "Nueva contraseña",
+  "Confirmnewpassword": "Confirmar nueva contraseña",
+  "OldpasswordRequired": "Ingrese una contraseña anterior",
+  "NewpasswordRequired": "Introduzca una nueva contraseña",
+  "ConfirmpasswordRequired": "Ingresa una nueva contraseña de confirmación",
+  "FirsttimeLogin": "Inicio de sesión por primera vez",
+  "FLDefinition": "Si es la primera vez que inicia sesión, por razones de seguridad, cambie su contraseña para continuar.",
+  "TandC": "Términos + condiciones",
+  "TandCDefinition": "Lea estos términos y condiciones de uso antes de utilizar este sitio web. Si no acepta las disposiciones establecidas, lea estos términos y condiciones de uso antes de utilizar este sitio web. Si no acepta las disposiciones establecidas, por favor ... FPO",
+  "Accept":"Aceptar términos + condiciones",
+  "Email Address": "Dirección de correo electrónico",
+  "Forgot Username": "Olvidé mi nombre",
+  "Fuser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  "ForgetPWD": "Forgot Password",
+  "Fpsw": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+}

@@ -1,0 +1,79 @@
+
+  <!-- Body Content -->
+  <!-- ################################################# -->
+
+  <!-- First Time -->
+  <div class="row">
+    <div class="page-login__body col-md-10 is-relative">
+
+      <div class="row">
+        <div class="page-login__welcome page-login__welcome--first-time col-md-5">
+          <h1>{{'FirsttimeLogin'| translate:param}}</h1>
+          <p class="page-login__welcome-body">If this is first time login, for security reasons please change your password to continue.</p>
+          <p class="page-login__welcome-body">
+            <a routerLink="/">
+              <i class="material-icons">arrow_back</i> {{'Back'| translate:param}}</a>
+          </p>
+        </div>
+
+        <div class="page-login__login-form col-md-6 offset-md-1"  #form="ngForm" ngForm>
+
+          <div class="md-form">
+
+
+            <input type="password" id="oldpassword" autofocus  name="oldpassword" class="form-control without-autocolor"
+              tabindex="1" [(ngModel)]="userName" #oldpwd="ngModel" ngModel required [ngClass]="oldpwd.invalid && oldpwd.touched?'invalid':''"
+            />
+            <label for="oldpassword" class="" [attr.data-error]="'OldpasswordRequired'|translate:parm">
+              <span>{{'Oldpassword'| translate:param}}</span>
+            </label>
+
+          </div>
+
+          <div class="md-form">
+            <input type="password" id="newpassword" name="newpassword" class="form-control without-autocolor" tabindex="2" [(ngModel)]="oldPassword"
+              #newpwd="ngModel" ngModel required [ngClass]="newpwd.invalid && newpwd.touched?'invalid':''" />
+            <label for="newpassword" class="" data-error="Enter a New Password">
+              <span>{{'Newpassword'| translate:param}}</span>
+            </label>
+          </div>
+
+          <div class="md-form">
+            <input type="password" id="confirmnewpassword" name="confirmnewpassword" class="form-control without-autocolor" tabindex="3"
+              [(ngModel)]="newPassword" #newconfirmpwd="ngModel" ngModel required [ngClass]="((newconfirmpwd.invalid)||(newconfirmpwd.value!=newpwd.value))&& newconfirmpwd.touched?'invalid':''"
+            />
+            <label for="confirmnewpassword" class="" [attr.data-error]="'ConfirmpasswordRequired'| translate:param">
+              <span>{{'Confirmnewpassword'| translate:param}}</span>
+            </label>
+
+          </div>
+
+          <div class="page-login__terms-box">
+            <h4>{{'TandC'| translate:param}}</h4>
+            <p>{{'TandCDefinition'| translate:param}} </p>
+          </div>
+
+          <div class="md-form page-login__checkbox">
+            <input type="checkbox" id="accept" name="accept" class="form-control" tabindex="4" #acceptterms="ngModel" ngModel required
+              [ngClass]="acceptterms.invalid && acceptterms.touched?'invalid':''">
+            <label for="accept">{{'Accept'| translate:param}}</label>
+          </div>
+
+          <button type="button" class="btn btn-primary" tabindex="5" (click)="ChangePassword(form)">{{'Changepassword'| translate:param}}</button>
+        </div>
+
+        <div class="page-login__lang-select is-mobile">
+          <!-- <select>
+            <option value="1" selected>English (USA)</option>
+            <option value="2">Français (Canada)</option>
+            <option value="3">Deutsch (Germany)</option>
+            <option value="4">Español (Mexico)</option>
+            <option value="5">한국어 (South Korea)</option>
+          </select>
+          <span class="caret"></span> -->
+          <app-lang-select></app-lang-select>
+        </div>
+      </div>
+
+    </div>
+  </div>

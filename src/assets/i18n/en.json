@@ -1,0 +1,23 @@
+{
+  "Username": "Username",
+  "UsernameRequired": "Please enter a Username",
+  "Password": "Password",
+  "PasswordRequired": "Please enter a password",
+  "Oldpassword": "Old Password",
+  "Newpassword": "New Password",
+  "Confirmnewpassword": "Confirm New Password",
+  "OldpasswordRequired": "Enter a Old Password",
+  "NewpasswordRequired": "Enter a New Password",
+  "ConfirmpasswordRequired": "Enter a new Confirm Password",
+  "FirsttimeLogin": "First Time Login",
+  "FLDefinition": "If this is first time login, for security reasons please change your password to continue.",
+  "TandC": "Terms + Conditions",
+  "TandCDefinition": "Please read these terms and conditions of use before using this website. If you do not agree to the provisions set forth, please Please read these terms and conditions of use before using this website. If you do not agree to the provisions set forth, please ... FPO",
+  "Accept":"Accept Terms + Conditions",
+  "Email Address": "Email Address",
+  "Forgot Username": "Forgot Username",
+  "Fuser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  "ForgetPWD": "Forgot Password",
+  "Fpsw": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+}

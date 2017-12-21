@@ -1,0 +1,23 @@
+{
+    "Username": "Gebruikersnaam",
+    "UsernameRequired": "Voer alstublieft een gebruikersnaam in",
+    "Password": "Wachtwoord",
+    "PasswordRequired": "voer een wachtwoord in alstublieft",
+    "Oldpassword": "Oud Wachtwoord",
+    "Newpassword": "nieuw paswoord",
+    "Confirmnewpassword": "Bevestig nieuw wachtwoord",
+    "OldpasswordRequired": "Voer een oud wachtwoord in",
+    "NewpasswordRequired": "Voer een nieuw wachtwoord in",
+    "ConfirmpasswordRequired": "Voer een nieuw bevestigingswachtwoord in",
+    "FirsttimeLogin": "Eerste keer inloggen",
+    "FLDefinition": "Als dit de eerste keer inloggen is, moet u om veiligheidsredenen uw wachtwoord wijzigen om door te gaan.",
+    "TandC": "Voorwaarden + Voorwaarden",
+    "TandCDefinition": "Lees deze algemene voorwaarden voordat u deze website gebruikt. Als u niet akkoord gaat met de bepalingen die zijn uiteengezet, lees dan deze gebruiksvoorwaarden voordat u deze website gebruikt. Als u niet akkoord gaat met de bepalingen die zijn uiteengezet, alstublieft ... FPO",
+    "Accept":"Voorwaarden + Voorwaarden accepteren",
+    "Email Address": "E-mailadres",
+    "Forgot Username": "Gebruikersnaam vergeten",
+    "Fuser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "ForgetPWD": "Forgot Password",
+    "Fpsw": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  
+  }

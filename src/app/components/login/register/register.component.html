@@ -1,0 +1,196 @@
+    <!-- Login
+    ################################################# -->
+    <div class="main-container container-fluid">
+
+      <!-- Header Content
+	  ################################################# -->
+      <div class="page-login__header row">
+        <div class="col-md-12">
+          <div>
+            <a href="/"><img src="./assets/img/accel-logo-off-white.svg" alt="AccelerationVMS"></a>
+          </div>
+          <div class="page-login__lang-select is-desktop">
+            <select class="mdb-select">
+              <option value="" disabled selected>English (USA)</option>
+              <option value="1">English (USA)</option>
+              <option value="2">Français (Canada)</option>
+              <option value="3">Deutsch (Germany)</option>
+              <option value="4">Español (Mexico)</option>
+              <option value="5">한국어 (South Korea)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Body Content -->
+	  <!-- ################################################# -->
+
+	  <!-- Login -->
+	  <div class="row" style="margin-top: 3%; margin-bottom: 3%">
+        <div class="page-login__body col-md-10 is-relative">
+
+		    <div class="row">
+		      <div class="page-login__welcome page-login__welcome--client-login col-md-5">
+		        <h1>Client Registration</h1>
+		        <p class="page-login__welcome-body">
+		          <a routerLink="/home"><i class="material-icons">arrow_back</i> Back to Login</a>
+		        </p>
+		      </div>
+
+		      <div class="page-login__login-form col-md-6 offset-md-1">
+            <form (submit)="onRegisterSubmit()">
+  		        <div class="md-form">
+                <input
+                  type="text"
+                  [(ngModel)]="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Name">
+  		        </div>
+              <div class="md-form">
+                <input
+                  type="text"
+                  [(ngModel)]="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email">
+  		        </div>
+              <div class="md-form">
+                <input
+                  type="text"
+                  [(ngModel)]="username"
+                  name="username"
+                  class="form-control"
+                  placeholder="Username">
+  		        </div>
+  		        <div class="md-form">
+                <i class="fa fa-lock"></i>
+                <input
+                  type="password"
+                  [(ngModel)]="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Password">
+  		        </div>
+              <input
+                type="submit"
+                class="btn btn-agile waves-effect waves-light"
+                value="Register"
+                style="color: #607d8b !important;">
+            </form>
+		      </div>
+
+		      <div class="page-login__lang-select is-mobile">
+		        <select>
+		          <option value="1" selected>English (USA)</option>
+		          <option value="2">Français (Canada)</option>
+		          <option value="3">Deutsch (Germany)</option>
+		          <option value="4">Español (Mexico)</option>
+		          <option value="5">한국어 (South Korea)</option>
+		        </select>
+		        <span class="caret"></span>
+		      </div>
+		    </div>
+
+        </div>
+      </div>
+
+
+      <!-- Footer Content
+	  ################################################# -->
+
+      <div class="page-login__footer row is-fixed">
+        <div class="col-md-12">
+          <div class="page-login__help-prompt">
+            <a href="#">Need Help?</a>
+          </div>
+
+          <div class="page-login__desktop-help-scrim"></div>
+          <div class="page-login__desktop-help-panel">
+            <div class="page-login__desktop-help-panel-header">
+              <h3>Help <i class="material-icons">arrow_back</i></h3>
+            </div>
+            <div class="help-content">
+
+              <div class="help-content-contact">
+                <h4>Support</h4>
+                <p>Department Name</p>
+                <p>800-872-2677 ext. 1234</p>
+                <p><a href="mailto:helpdesk@agile1.com">helpdesk@agile1.com</a></p>
+              </div>
+
+              <div class="help-content-contact">
+                <h4>Admin</h4>
+                <p>Department Name</p>
+                <p>800-872-2677 ext. 1234</p>
+                <p><a href="mailto:helpdesk@agile1.com">helpdesk@agile1.com</a></p>
+              </div>
+
+              <div class="help-content-contact">
+                <h4>On-Site</h4>
+                <p>Department Name</p>
+                <p>800-872-2677 ext. 1234</p>
+                <p><a href="mailto:helpdesk@agile1.com">helpdesk@agile1.com</a></p>
+              </div>
+
+              <div class="help-content-guide">
+                <a href="https://ag.agile1.com/EP.Web.Doc/help/en-US/Manager/default.htm" target="_blank">Help Guide <i class="material-icons">arrow_forward</i></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="page-login__copyright">
+            &copy; 2001 &mdash; 2017 AgileOne  /  All Rights Reserved  /  Powered by AgileOne v8.7.1.0
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Mobile Help Content
+    ################################################# -->
+
+    <div class="page-login__mobile-help-content">
+      <div class="mhc-header mhc-block">
+          <h3>Need Help?</h3>
+        </div>
+
+        <div class="mhc-content mhc-block">
+          <div class="help-content">
+
+            <div class="help-content-contact">
+              <h4>Support</h4>
+              <p>Department Name</p>
+              <p>800-872-2677 ext. 1234</p>
+              <p><a href="mailto:helpdesk@agile1.com">helpdesk@agile1.com</a></p>
+            </div>
+
+            <div class="help-content-contact">
+              <h4>Admin</h4>
+              <p>Department Name</p>
+              <p>800-872-2677 ext. 1234</p>
+              <p><a href="mailto:helpdesk@agile1.com">helpdesk@agile1.com</a></p>
+            </div>
+
+            <div class="help-content-contact">
+              <h4>On-Site</h4>
+              <p>Department Name</p>
+              <p>800-872-2677 ext. 1234</p>
+              <p><a href="mailto:helpdesk@agile1.com">helpdesk@agile1.com</a></p>
+            </div>
+
+            <div class="help-content-guide">
+              <a href="https://ag.agile1.com/EP.Web.Doc/help/en-US/Manager/default.htm" target="_blank">Help Guide <i class="material-icons">arrow_forward</i></a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mhc-copyright mhc-block">
+          &copy; 2001 &mdash; 2017 AgileOne<br/>
+          All Rights Reserved<br/>
+          Powered by AgileOne v8.7.1.0
+        </div>
+    </div>

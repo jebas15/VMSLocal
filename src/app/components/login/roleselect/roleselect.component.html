@@ -1,0 +1,44 @@
+<!-- Body Content -->
+<!-- ################################################# -->
+
+<!-- Role Select -->
+<div class="row" style="margin-top: 8%; margin-bottom: 8%">
+  <div class="page-login__body col-md-10">
+    <div class="row">
+      <div class="page-login__welcome page-login__welcome--role-select col-md-5">
+        <h1>Welcome to
+          <br/>Acceleration VMS</h1>
+        <p class="page-login__welcome-body">Connecting hiring managers, workers and staffing suppliers through a single, real-time application. AccelerationVMS
+          streamlines hiring processes.</p>
+
+      </div>
+
+      <div class="col-md-6 offset-md-1">
+        <div class="page-login__role-prompt">Select Your Role</div>
+        <ul class="page-login__role-list">
+          <li class="page-login__role-list-item">
+            <a (click)="SetRole('Client')" routerLink="/loginuser">Client</a>
+          </li>
+          <li class="page-login__role-list-item">
+            <a routerLink="/home">Vendor</a>
+          </li>
+          <li class="page-login__role-list-item">
+            <a routerLink="/home">Worker</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-login__lang-select is-mobile">
+        <select>
+          <option value="1" selected>English (USA)</option>
+          <option value="2">Français (Canada)</option>
+          <option value="3">Deutsch (Germany)</option>
+          <option value="4">Español (Mexico)</option>
+          <option value="5">한국어 (South Korea)</option>
+        </select>
+        <span class="caret"></span>
+      </div>
+    </div>
+
+  </div>
+</div>

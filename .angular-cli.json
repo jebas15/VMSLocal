@@ -1,0 +1,102 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "vmsangular"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "assets/css/bootstrap.css",
+        "assets/css/styles.css",
+        "assets/css/vendor/perfect-scrollbar.min.css",
+        "assets/css/vendor/slick.css",
+        "assets/css/vendor/slick-theme.css",
+        "styles.css"
+      ],
+      "scripts": [
+      
+        "assets/js/scripts.js",
+        "assets/js/common.js",
+        "assets/js/utils.js",
+        "assets/js/index.js",
+        "assets/js/login/index.js",
+        "assets/js/lang-select.js",
+        "assets/js/vendor/mdb.min.js",
+        
+       
+        "assets/js/nav-bar.js",
+        "assets/js/banner.js",
+       
+        "assets/js/dashboard/index.js",
+        "assets/js/dashboard/calendar.js",
+        "assets/js/vendor/moment.min.js",
+        "assets/js/vendor/moment-timezone-with-data-2012-2022.min.js",
+        "assets/js/vendor/clndr.min.js",
+        "assets/js/vendor/jquery.touchSwipe.min.js",
+        "assets/js/vendor/addtocalendar.js",
+       
+        "assets/js/job-record/index.js",
+        "assets/js/vendor/clndr.min.js",
+        "assets/js/vendor/rangeslider.min.js",
+        "assets/js/vendor/jquery.dataTables.min.js",
+        "assets/js/vendor/dataTables.fixedColumns.min.js",
+        "assets/js/vendor/dataTables.colReorder.js",
+        "assets/js/popups.js",
+        "assets/js/accelerationTables.js",
+        
+        "assets/js/lists/index.js",
+        "assets/js/lists/list-controls.js",
+       
+        "assets/js/vendor/mdb.min.js",
+        "assets/js/vendor/perfect-scrollbar.jquery.js",
+        "assets/js/vendor/slick.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

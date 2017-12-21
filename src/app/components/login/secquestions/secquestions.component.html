@@ -1,0 +1,98 @@
+<!-- Body Content -->
+<!-- ################################################# -->
+
+<!-- Security Questions -->
+<div class="row">
+  <div class="page-login__body col-md-10 is-relative">
+
+    <div class="row">
+      <div class="page-login__welcome page-login__welcome col-md-5">
+        <h1>Security Questions</h1>
+        <p class="page-login__welcome-body">To increase the security of your answers you may wish to use a short phrase instead of a single word. The answer
+          can be any secure response you can remember.</p>
+        <p class="page-login__welcome-body page-login__welcome-body--note">Please answer at least 3 questions.</p>
+        <p class="page-login__welcome-body">
+          <a routerLink="/home">
+            <i class="material-icons">arrow_back</i> Back to Login</a>
+        </p>
+      </div>
+
+      <div class="page-login__login-form col-md-6 offset-md-1">
+
+        <div class="md-form">
+
+
+          <input type="text" id="color" [(ngModel)]="model.color" class="form-control ">
+
+          <label for="color" class="translate:param">
+            <span>{{'What is your favorite color?'|translate:param}}</span>
+          </label>
+
+
+        </div>
+
+        <div class="md-form">
+
+
+          <input type="text" id="band"[(ngModel)]="model.band" class="form-control ">
+
+          <label for="band" class="translate:param">
+            <span>{{'What is the name of your favorite band?'|translate:param}}</span>
+          </label>
+
+
+        </div>
+
+        <div class="md-form">
+
+
+          <input type="text" id="dessert"[(ngModel)]="model.dessert" class="form-control ">
+
+          <label for="dessert" class="translate:param">
+            <span>{{'What is your favorite dessert?'|translate:param}}</span>
+          </label>
+
+
+        </div>
+
+        <div class="md-form">
+
+
+          <input type="text" id="school"[(ngModel)]="model.school" class="form-control ">
+
+          <label for="school" class="translate:param">
+            <span>{{'Where did you go to elementary school?'|translate:param}}</span>
+          </label>
+
+
+        </div>
+
+        <div class="md-form">
+
+
+          <input type="text" id="married"[(ngModel)]="model.married" class="form-control ">
+
+          <label for="married" class="translate:param">
+            <span>{{'How old were you when you got married?'|translate:param}}</span>
+          </label>
+
+
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+      </div>
+
+      <div class="page-login__lang-select is-mobile">
+        <select>
+          <option value="1" selected>English (USA)</option>
+          <option value="2">Français (Canada)</option>
+          <option value="3">Deutsch (Germany)</option>
+          <option value="4">Español (Mexico)</option>
+          <option value="5">한국어 (South Korea)</option>
+        </select>
+        <span class="caret"></span>
+      </div>
+    </div>
+
+  </div>
+</div>

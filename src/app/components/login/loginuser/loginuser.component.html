@@ -1,0 +1,56 @@
+
+  <!-- Body Content -->
+  <!-- ################################################# -->
+
+  <!-- Login -->
+  <div class="row">
+    <div class="page-login__body col-md-10">
+
+      <div class="row">
+        <div class="page-login__welcome page-login__welcome--client-login col-md-5">
+          <h1>Client Login</h1>
+          <p class="page-login__welcome-body">
+            <a routerLink="/roleselect">
+              <i class="material-icons">arrow_back</i> Back </a>
+          </p>
+        </div>
+
+        <div class="page-login__login-form col-md-6 offset-md-1">
+          <form (ngSubmit)="onLoginSubmit(form)" #form="ngForm">
+            <div class="md-form autocom_bottom">
+
+              <input type="text" id="username" name="username" [(ngModel)]="username" email class="form-control without-autocolor" autofocus
+                maxlength="40" #user="ngModel" ngModel required [ngClass]="user.invalid && user.touched?'invalid':''" />
+
+              <label for="username" class="" [attr.data-error]="'UsernameRequired'| translate:param">
+                <span>{{'Username'| translate:param}}</span>
+              </label>
+              <a routerLink="/forgotusrname" class="page-login__login-form-forgot">Forgot?</a>
+            </div>
+            <div class="md-form autocom_bottom">
+              <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control without-autocolor" #pwd="ngModel"
+                ngModel required [ngClass]="pwd.invalid && pwd.touched?'invalid':''" />
+
+              <label for="password" class="" [attr.data-error]="'PasswordRequired'| translate:param">
+                <span>{{'Password'| translate:param}}</span>
+              </label>
+              <a routerLink="/forgotpw" class="page-login__login-form-forgot">Forgot?</a>
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+          </form>
+        </div>
+
+        <div class="page-login__lang-select is-mobile">
+          <select>
+            <option value="1" selected>English (USA)</option>
+            <option value="2">Français (Canada)</option>
+            <option value="3">Deutsch (Germany)</option>
+            <option value="4">Español (Mexico)</option>
+            <option value="5">한국어 (South Korea)</option>
+          </select>
+          <span class="caret"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
